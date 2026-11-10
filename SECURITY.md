@@ -1,8 +1,8 @@
 # KFIP Security Policy
 
-**Project:** Kongali Financial Infrastructure Platform (KFIP)  
-**Integration Component:** FAM Crypto Host  
-**Document Type:** Repository Security Policy  
+**Project:** Kongali Financial Infrastructure Platform (KFIP)
+**Integration Component:** FAM Crypto Host
+**Document Type:** Repository Security Policy
 **Status:** Active Policy — Implementation Evidence Required
 
 ---
@@ -360,7 +360,7 @@ testing, and review evidence.
 
 ---
 
-**Policy Version:** 1.0.0  
-**Review Status:** Initial repository security policy  
+**Policy Version:** 1.0.0
+**Review Status:** Initial repository security policy
 **Last Updated:** 2026-11-11
 
