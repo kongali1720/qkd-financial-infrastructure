@@ -1,0 +1,16 @@
+sequenceDiagram
+    autonumber
+    participant A as Alice
+    participant B as Bob
+    A->>B: Transmit randomly encoded quantum states
+    B->>B: Measure using random bases
+    B-->>A: Authenticated basis reconciliation
+    A-->>B: Parameter estimation
+    alt Security conditions fail
+        A-->>B: Abort
+    else Security conditions pass
+        A-->>B: Information reconciliation
+        B-->>A: Verification
+        Note over A,B: Privacy amplification
+        Note over A,B: Shared secret key established
+    end

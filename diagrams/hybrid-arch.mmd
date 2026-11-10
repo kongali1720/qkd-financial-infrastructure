@@ -1,0 +1,25 @@
+flowchart TD
+    C["Financial Client"]
+    A["API Gateway"]
+    I["Identity and Authentication"]
+    P["PQC Services"]
+    Q["QKD Network"]
+    K["Key Management"]
+    H["HSM"]
+    E["Protected Channel"]
+    T["Transaction Processor"]
+    B["Authorized Bank Connector"]
+    L["Audit Logs"]
+
+    C --> A
+    A --> I
+    I --> P
+    P --> K
+    Q --> K
+    K --> H
+    H --> E
+    A --> E
+    E --> T
+    T --> B
+    A --> L
+    T --> L

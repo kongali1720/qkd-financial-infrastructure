@@ -1,0 +1,23 @@
+sequenceDiagram
+    autonumber
+    participant C as Client
+    participant A as API Gateway
+    participant I as Identity Service
+    participant K as KMS
+    participant P as Payment Processor
+    participant B as Banking Connector
+
+    C->>A: Payment request
+    A->>I: Verify authorization
+    I-->>A: Authorization result
+    alt Unauthorized
+        A-->>C: Reject
+    else Authorized
+        A->>K: Establish protected session
+        K-->>A: Cryptographic context
+        A->>P: Validated request
+        P->>B: Authorized banking request
+        B-->>P: Banking response
+        P-->>A: Processing status
+        A-->>C: Return status
+    end
