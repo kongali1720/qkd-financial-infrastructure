@@ -1,0 +1,23 @@
+flowchart TB
+    CLIENT["Client"]
+    API["API Gateway"]
+    AUTH["Authentication"]
+    RISK["Risk Engine"]
+    PAY["Payment Engine"]
+    LEDGER["Ledger"]
+    BANK["Bank Adapter"]
+    SETTLE["Settlement"]
+    RECON["Reconciliation"]
+    AUDIT["Audit"]
+
+    CLIENT --> API
+    API --> AUTH
+    AUTH --> RISK
+    RISK --> PAY
+    PAY --> LEDGER
+    PAY --> BANK
+    BANK --> SETTLE
+    SETTLE --> RECON
+    RECON --> LEDGER
+    PAY --> AUDIT
+    RECON --> AUDIT

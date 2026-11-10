@@ -425,3 +425,48 @@ Project: QKD Financial Infrastructure
 MIT License.
 
 Copyright (c) 2026 Kongali1720.
+
+---
+
+# 🏗️ System Engineering Documentation
+
+The project includes an expanded implementation blueprint covering financial software engineering, transaction processing, banking connectivity, cryptographic infrastructure and operational readiness.
+
+## Documentation Index
+
+| Document | Subject |
+|----------|---------|
+| [00 Project Charter](docs/00-project-charter.md) | Vision, scope and governance |
+| [01 Requirements](docs/01-system-requirements.md) | Functional and non-functional requirements |
+| [02 Architecture](docs/02-system-architecture.md) | Complete system architecture |
+| [03 Infrastructure](docs/03-infrastructure-design.md) | Server, network and deployment topology |
+| [04 Transaction Lifecycle](docs/04-transaction-lifecycle.md) | Financial transaction states and processing |
+| [05 Payment Engine](docs/05-payment-engine.md) | Payment orchestration and idempotency |
+| [06 Double-Entry Ledger](docs/06-double-entry-ledger.md) | Accounting and journal integrity |
+| [07 API Specification](docs/07-api-specification.md) | API endpoints and request contracts |
+| [08 Banking Integration](docs/08-banking-integration.md) | Bank API and host-to-host integration |
+| [09 QKD-PQC](docs/09-qkd-pqc-implementation.md) | Quantum-safe security implementation |
+| [10 Database Design](docs/10-database-design.md) | Data models and integrity |
+| [11 Software Engineering](docs/11-software-engineering.md) | Backend development and coding standards |
+| [12 Security](docs/12-security-compliance.md) | Application security and compliance |
+| [13 DevOps](docs/13-devops-deployment.md) | CI/CD and infrastructure deployment |
+| [14 Testing](docs/14-testing-validation.md) | Financial and security testing |
+| [15 Operations](docs/15-monitoring-operations.md) | Monitoring and incident management |
+| [16 Disaster Recovery](docs/16-disaster-recovery.md) | Backup and recovery |
+| [17 Roadmap](docs/17-implementation-roadmap.md) | Phased implementation plan |
+| [18 Risk Register](docs/18-risk-register.md) | Project and operational risks |
+| [19 Acceptance Criteria](docs/19-acceptance-criteria.md) | Delivery and production gates |
+
+## Engineering Diagrams
+
+- [Financial System](diagrams/financial-system.mmd)
+- [Software Engineering Lifecycle](diagrams/software-engineering.mmd)
+- [Settlement and Reconciliation](diagrams/settlement-reconciliation.mmd)
+
+## Implementation Philosophy
+
+Build and validate the conventional financial software foundation first.
+
+Introduce post-quantum cryptography through supported implementations and evaluate QKD separately through laboratory research.
+
+Production financial operations require authorized provider access, appropriate legal permissions, security assessment and formal operational approval.

@@ -1,0 +1,19 @@
+flowchart TD
+    REQ["Requirements"]
+    DESIGN["System Design"]
+    CODE["Implementation"]
+    UNIT["Unit Testing"]
+    INT["Integration Testing"]
+    SEC["Security Testing"]
+    STAGE["Staging"]
+    APPROVE["Approval"]
+    PROD["Production"]
+
+    REQ --> DESIGN
+    DESIGN --> CODE
+    CODE --> UNIT
+    UNIT --> INT
+    INT --> SEC
+    SEC --> STAGE
+    STAGE --> APPROVE
+    APPROVE --> PROD

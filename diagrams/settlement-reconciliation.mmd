@@ -1,0 +1,18 @@
+sequenceDiagram
+    autonumber
+    participant P as Payment Engine
+    participant L as Ledger
+    participant B as Banking Provider
+    participant R as Reconciliation
+
+    P->>L: Record approved internal accounting event
+    P->>B: Submit authorized instruction
+    B-->>P: Submission acknowledgement
+    P->>R: Send internal reference
+    B-->>R: Provider status or statement
+    R->>R: Match reference, amount and currency
+    alt Matched and settled
+        R->>L: Confirm settlement accounting
+    else Mismatch or missing evidence
+        R->>R: Create reconciliation exception
+    end
