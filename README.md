@@ -470,3 +470,22 @@ Build and validate the conventional financial software foundation first.
 Introduce post-quantum cryptography through supported implementations and evaluate QKD separately through laboratory research.
 
 Production financial operations require authorized provider access, appropriate legal permissions, security assessment and formal operational approval.
+
+---
+
+## Investor Documentation
+
+The following materials are preliminary planning documents for the
+Kongali Financial Infrastructure Platform (KFIP) proposed within
+PT FAM TIMUR INDONESIA.
+
+- [Corporate Structure and Governance](docs/20-corporate-structure-fam.md)
+- [Investor Due Diligence Checklist](docs/21-investor-due-diligence.md)
+- [Preliminary Investment Term Sheet](docs/22-investment-term-sheet.md)
+- [Detailed Investment Budget](docs/23-detailed-investment-budget.md)
+- [Investment Milestones and Funding Controls](docs/24-investment-milestones.md)
+
+**Disclaimer:** These documents are drafts for discussion and planning.
+They are not a securities offering, legal opinion, audited financial
+projection, or binding investment commitment. All figures and assumptions
+require validation and professional review.
